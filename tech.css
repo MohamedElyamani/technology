@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.home
+{
+    background-image: url(img/home.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    height: 620px;
+    text-align: center;
+}
+.contact-links
+{
+    color: darkgray;
+    height: 60px;
+    width: 100%;
+}
+.contact
+{
+    padding: 10px 0 0 20px;
+}
+.contact ul
+{
+    display: flex;
+    padding: 10px;
+}
+.contact ul li
+{
+    list-style: none;  
+}
+.contact ul li a
+{
+    opacity: .6;
+    margin-left: 10px;
+    color: darkgrey;
+}
+.fb:hover
+{
+    opacity: 1;
+    transition: .5s;
+    color: blue;
+}
+.link:hover
+{
+    opacity: 1;
+    transition: .5s;
+    color: #0073B0;
+}
+.google:hover
+{
+    opacity: 1;
+    transition: .5s;
+    color: red;
+}
+.twitter:hover
+{
+    opacity: 1;
+    transition: .5s;
+    color: #1DA1F2;
+}
+.links ul
+{
+    float: right;   
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 980px;
+}
+.links ul li
+{
+    list-style: none;
+    margin: 0 7px;
+    padding: 5px;
+    
+}
+.links ul li a
+{
+    text-decoration: none;
+    color: darkgray;
+    font-family: 'Roboto', sans-serif;
+    transition: .5s;
+    
+}
+.links ul li a.active,
+.links ul li a:hover
+{
+    background: red;
+    color: white;
+    padding: 4px;
+    border-radius: 15%;
+}
+
+/* ----------------------------------*/
+/* after lines */
+
+.links ul::after
+{
+    content: "";
+    width: 270px;
+    height: 2px;
+    background: darkgray;
+    position: absolute;
+    top: 35px;
+    left: 35px
+        
+}
+.contact ul::after
+{
+    content: "";
+    width: 95px;
+    height: 2px;
+    background: darkgray;
+    position: absolute;
+    top: 42px;
+    left: 35px
+}
+
+.type h1
+{
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 7px;
+    font-size: 7em;
+    font-family: 'Lobster', cursive;
+    color: white;
+    text-shadow: 3px 3px black;
+    
+}
+.type p
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px blue;
+}
+/* End HOME */
+/* ----------------------------------------------------------------------- */
+/*  START services */
+.services
+{
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(to top, white, gray);
+   
+}
+.services div h1 
+{
+    text-align: center;
+    padding-top: 45px;
+    color: white;
+    text-shadow: 2px 2px blue;
+    letter-spacing: 2px;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    text-transform: uppercase; 
+    margin-right: 70px;
+}
+.services div::after
+{
+    content: "";
+    width: 20%;
+    height: 3px;
+    background: #909090;
+    position: absolute;
+    top: 110%;
+    left: 38%;
+}
+
+.services1
+{
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(to bottom, white, gray);
+}
+.services1 .row
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -60%;
+    width: 100%;
+}
+.services1 .row::after
+{
+    content: "";
+    background: #909090;
+    width: 20%;
+    height: 2px;
+    position: absolute;
+    bottom: 40%;
+    right: 27.5%;
+    transform: rotate(90deg)
+}
+.services1 .row::before
+{
+    content: "";
+    background: #909090;
+    width: 20%;
+    height: 2px;
+    position: absolute;
+    bottom: 40%;
+    right: 53%;
+    transform: rotate(90deg)
+}
+.services1 h3
+{
+    font-family: sans-serif;
+}
+.services1 .icon
+{
+    margin: 5px auto;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    font-size: 40px;
+}
+.services1 .icon .fa
+{
+    color: red;
+    text-shadow: 2px 1px black;
+}
+/* .services1 .col-md-3
+{
+    border-right: 2px solid #909090;
+    margin-right: 15px;
+}*/
+/* END Services */
+/*-------------------------------------------------------------------------------*/ 
+/* START Footer*/ 
+.footer
+{
+    height: 400px;
+    width: 100%;
+    background: black;
+    padding: 30px 30px;
+}
+.footer h1
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 4em;
+    color: white;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
